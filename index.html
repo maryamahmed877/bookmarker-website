@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- ----------google fonts ---------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!-- ----------font owsome ---------- -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- ----------bootstrap css ---------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ----------sweetalert2 css ---------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- ----------style css ---------- -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="py-5 ">
+        <div class="container">
+            <div class="text-center">
+                <h1 class=" text-center m-auto">Bookmarker</h1>
+                <h2 class="h4 fw-bolder my-5 py-5"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                        class="fa-solid fa-bookmark"></i></h2>
+            </div>
+
+            <div class="inputs">
+                <div class="mb-3">
+                    <label for="SiteName" class="form-label fw-bolder"><i class="fa-solid fa-book-bookmark"></i> Site
+                        Name</label>
+                    <input type="text" class="form-control" id="SiteName" placeholder="Bookmark name"
+                        oninput="demo(this.value)">
+                </div>
+                <div class="mb-3">
+                    <label for="SiteURL" class="form-label fw-bolder"><i class="fa-solid fa-link"></i> Site URL</label>
+                    <input type="text" class="form-control" id="SiteURL" placeholder="Website URL"
+                        oninput="demo2(this.value)">
+                </div>
+                <button onclick="addInfo()" class="btn btn-danger m-auto px-5 d-block mb-4">Submit</button>
+            </div>
+
+            <table class="table mt-4 text-center ">
+                <thead>
+                    <tr>
+                        <th>index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+
+                </tbody>
+
+            </table>
+        </div>
+    </section>
+
+    <!-- ----------bootstrap js ---------- -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ----------sweetalert2 js ---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <!-- ----------main js ---------- -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

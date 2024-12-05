@@ -1,0 +1,53 @@
+.form-control:focus{
+    box-shadow: none;
+}
+
+body {
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+h1 {
+    font-family: "Pacifico", sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    background-color: #F7ECDE;
+}
+
+h1 {
+    position: relative;
+    isolation: isolate;
+    display: inline-block;
+    font-size: 50px;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    left: 0;
+    bottom: 0;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: all 0.8s;
+}
+
+h1:hover::before{
+    height: 70%;
+}
+
+h2 {
+    border-top: dotted 2px black;
+}
+
+h2 i {
+    color: #FEC260;
+}
+
+.inputs {
+    border-bottom: dotted 2px black;
+}
+
+

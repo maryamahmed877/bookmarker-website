@@ -81,6 +81,8 @@ function demo2(pvalue) {
 function clearForm() {
     siteNameInput.value = null;
     siteURLInput.value = null;
+    siteNameInput.classList.remove("is-valid", "is-invalid");
+    siteURLInput.classList.remove("is-valid", "is-invalid");
 }
 
 function displayInfo() {
